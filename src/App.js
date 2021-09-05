@@ -1,11 +1,8 @@
 import "./App.css";
+import MainPage from "./app/MainPage/MainPage";
 
 function App() {
-  return (
-    <div className="App">
-      <center>Shafqat Ullah Khan</center>
-    </div>
-  );
+  return <MainPage />;
 }
 
 export default App;

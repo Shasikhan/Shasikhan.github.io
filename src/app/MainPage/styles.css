@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  background-color: navy;
+  height: 100vh;
+}
+.Box1 {
+  display: flex;
+  flex: 1;
+  background-color: aqua;
+  justify-content: space-around;
+  align-items: center;
+}
+.Box1_1 {
+  display: flex;
+  flex-direction: column;
+}
+.Text1_1 {
+  background-color: brown;
+}
+.Text1_2 {
+  background-color: chartreuse;
+}
+.Text1_3 {
+  background-color: rgb(8, 104, 96);
+}
+.Box2 {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  background-color: blueviolet;
+  justify-content: space-around;
+  align-items: center;
+}
+.Text2_1 {
+  background-color: darkolivegreen;
+}
+.Text2_2 {
+  background-color: deeppink;
+}
