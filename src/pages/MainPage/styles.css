@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  background-color: navy;
+  height: 100vh;
+}
+
+.cardStyle {
+  margin: auto;
+}
