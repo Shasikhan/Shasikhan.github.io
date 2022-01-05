@@ -7,3 +7,11 @@
 .cardStyle {
   margin: auto;
 }
+
+.linkBtn {
+  color: black;
+}
+
+.linkBtn:hover {
+  color: blueviolet;
+}

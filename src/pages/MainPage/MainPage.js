@@ -43,10 +43,35 @@ const MainPage = () => {
             JavaScript | MERN
           </Typography>
         </CardContent>
-        <CardActions style={{ margin: "auto" }}>
-          <LinkedInIcon />
-          <GitHubIcon />
-          <FacebookIcon onClick={() => alert("Hi")} />
+        <CardActions
+          style={{
+            justifyContent: "center",
+          }}
+        >
+          <a
+            rel="noreferrer"
+            className="linkBtn"
+            href="https://www.linkedin.com/in/shafqat-ullah-khan-25a9b8111"
+            target="_blank"
+          >
+            <LinkedInIcon />
+          </a>
+          <a
+            rel="noreferrer"
+            className="linkBtn"
+            href="https://github.com/Shasikhan"
+            target="_blank"
+          >
+            <GitHubIcon />
+          </a>
+          <a
+            rel="noreferrer"
+            className="linkBtn"
+            href="https://twitter.com/shafqat_ullahk/"
+            target="_blank"
+          >
+            <FacebookIcon />
+          </a>
         </CardActions>
       </Card>
     </div>
