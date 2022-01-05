@@ -51,26 +51,29 @@ const MainPage = () => {
           <a
             rel="noreferrer"
             className="linkBtn"
+            style={{ color: "#0077b5" }}
             href="https://www.linkedin.com/in/shafqat-ullah-khan-25a9b8111"
             target="_blank"
           >
-            <LinkedInIcon />
+            <LinkedInIcon sx={{ fontSize: 35 }} />
           </a>
           <a
             rel="noreferrer"
             className="linkBtn"
+            style={{ color: "#333" }}
             href="https://github.com/Shasikhan"
             target="_blank"
           >
-            <GitHubIcon />
+            <GitHubIcon sx={{ fontSize: 35 }} />
           </a>
           <a
             rel="noreferrer"
             className="linkBtn"
+            style={{ color: "#3b5998" }}
             href="https://twitter.com/shafqat_ullahk/"
             target="_blank"
           >
-            <FacebookIcon />
+            <FacebookIcon sx={{ fontSize: 35 }} />
           </a>
         </CardActions>
       </Card>
