@@ -20,7 +20,7 @@ const CONFIG = {
         limit: 8, // How many projects to display.
         exclude: {
           forks: false, // Forked projects will not be displayed if set to true.
-          projects: [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
+          projects: [],
         },
       },
       manual: {
@@ -30,23 +30,14 @@ const CONFIG = {
     },
     external: {
       header: 'My Projects',
-      // To hide the `External Projects` section, keep it empty.
       projects: [
         {
-          title: 'Project Name',
+          title: 'Fancy Everywhere',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+            'Share stylish text everywhere. Available for iOS and Android',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
-        },
-        {
-          title: 'Project Name',
-          description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-          imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'https://play-lh.googleusercontent.com/AV8LQwqm6ZTnMI9Sf_zJyazHyck61Y-q72OAYofkugAlB5-wiVa5bnwH3AYGmMjGc7wI=w480-h960-rw',
+          link: 'https://play.google.com/store/apps/details?id=com.bircube.fancy&hl=en&gl=US',
         },
       ],
     },
@@ -57,26 +48,26 @@ const CONFIG = {
     imageURL: '',
   },
   social: {
-    linkedin: 'ariful-alam',
-    twitter: 'arif_szn',
-    mastodon: 'arifszn@mastodon.social',
+    linkedin: 'shafqat-ullah-khan-25a9b8111/',
+    twitter: '',
+    mastodon: '',
     facebook: '',
     instagram: '',
-    youtube: '', // example: 'pewdiepie'
+    youtube: '',
     dribbble: '',
     behance: '',
-    medium: 'arifszn',
-    dev: 'arifszn',
-    stackoverflow: '', // example: '1/jeff-atwood'
+    medium: '',
+    dev: '',
+    stackoverflow: '8885560/shafqat-ullah-khan', // example: '1/jeff-atwood'
     skype: '',
     telegram: '',
-    website: 'https://www.arifszn.com',
+    website: '',
     phone: '',
-    email: 'arifulalamszn@gmail.com',
+    email: 'iamshafqatkhan@gmail.com',
   },
   resume: {
     fileUrl:
-      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
+      '', 
   },
   skills: [
     'PHP',
@@ -111,32 +102,32 @@ const CONFIG = {
     },
   ],
   certifications: [
-    {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
-    },
+    // {
+    //   name: 'Lorem ipsum',
+    //   body: 'Lorem ipsum dolor sit amet',
+    //   year: 'March 2022',
+    //   link: 'https://example.com',
+    // },
   ],
   educations: [
-    {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
-    },
-    {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
-    },
+    // {
+    //   institution: 'Institution Name',
+    //   degree: 'Degree',
+    //   from: '2015',
+    //   to: '2019',
+    // },
+    // {
+    //   institution: 'Institution Name',
+    //   degree: 'Degree',
+    //   from: '2012',
+    //   to: '2014',
+    // },
   ],
   // Display articles from your medium or dev account. (Optional)
   blog: {
-    source: 'dev', // medium | dev
-    username: 'arifszn', // to hide blog section, keep it empty
-    limit: 3, // How many articles to display. Max is 10.
+    // source: 'dev', // medium | dev
+    // username: 'arifszn', // to hide blog section, keep it empty
+    // limit: 3, // How many articles to display. Max is 10.
   },
   googleAnalytics: {
     id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
@@ -147,11 +138,11 @@ const CONFIG = {
     snippetVersion: 6,
   },
   themeConfig: {
-    defaultTheme: 'nord',
+    defaultTheme: 'dracula',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
-    disableSwitch: false,
+    disableSwitch: true,
 
     // Should use the prefers-color-scheme media-query,
     // using user system preferences, instead of the hardcoded defaultTheme
@@ -210,13 +201,13 @@ const CONFIG = {
   },
 
   // Optional Footer. Supports plain text or HTML.
-  footer: `Made with <a 
-      class="text-primary" href="https://github.com/arifszn/gitprofile"
-      target="_blank"
-      rel="noreferrer"
-    >GitProfile</a> and ❤️`,
+  // footer: `Made with <a 
+  //     class="text-primary" href="https://github.com/arifszn/gitprofile"
+  //     target="_blank"
+  //     rel="noreferrer"
+  //   >GitProfile</a> and ❤️`,
 
-  enablePWA: true,
+  enablePWA: false,
 };
 
 export default CONFIG;
