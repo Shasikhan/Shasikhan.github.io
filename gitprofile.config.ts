@@ -17,7 +17,7 @@ const CONFIG = {
       mode: 'automatic', // Mode can be: 'automatic' or 'manual'
       automatic: {
         sortBy: 'stars', // Sort projects by 'stars' or 'updated'
-        limit: 8, // How many projects to display.
+        limit: 4, // How many projects to display.
         exclude: {
           forks: false, // Forked projects will not be displayed if set to true.
           projects: [],
@@ -25,25 +25,49 @@ const CONFIG = {
       },
       manual: {
         // Properties for manually specifying projects
-        projects: ['arifszn/gitprofile', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: [], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
       },
     },
     external: {
-      header: 'My Projects',
+      header: 'Projects I have worked on:',
       projects: [
+        {
+          title: 'edupression.com®',
+          description:
+            'edupression.com is a digital self-help therapy program for patients with unipolar depression or burnout. The therapy is based on elements of behavioral therapy, latest, scientific findings and methods. Available for iOS and Android.',
+          imageUrl:
+            'https://play-lh.googleusercontent.com/nkzNdBhzOZ6FVKdJV6Ru1lBCM8UbFCqx2HDcDvG4hq6tq8hi9rGIcMdXtRbUyKjaWQ=w480-h960-rw',
+          link: 'https://play.google.com/store/apps/details?id=com.proappdev.edupression_web_mobile_app',
+        },
+        {
+          title: 'PropSure',
+          description:
+            'PropSure Digital Solutions Private Limited (PropSure) strive to transform Pakistan’s real estate industry through disruptive digital solutions and technical expertise. Being a pioneer, we facilitate our valued clients and partners to understand industry dynamics and make informed decisions to grab opportunities regarding real estate investments and developments. Available for iOS and Android.',
+          imageUrl:
+            'https://play-lh.googleusercontent.com/cp_QHplg8_5p4e4UhGaXoJWiXHKL9Tau4zPjo1fdvindHU5KhYGYKcXgsOAmLTtlIQ=w480-h960-rw',
+          link: 'https://play.google.com/store/apps/details?id=com.propsure.map',
+        },
         {
           title: 'Fancy Everywhere',
           description:
             'Share stylish text everywhere. Available for iOS and Android',
           imageUrl:
             'https://play-lh.googleusercontent.com/AV8LQwqm6ZTnMI9Sf_zJyazHyck61Y-q72OAYofkugAlB5-wiVa5bnwH3AYGmMjGc7wI=w480-h960-rw',
-          link: 'https://play.google.com/store/apps/details?id=com.bircube.fancy&hl=en&gl=US',
+          link: 'https://play.google.com/store/apps/details?id=com.bircube.fancy',
+        },
+        {
+          title: 'Status Downloader for WhatsApp',
+          description:
+            'Download and easily share WhatsApp status. Available for Android',
+          imageUrl:
+            'https://play-lh.googleusercontent.com/6r2NjCDqLkej4rG5cPJZDqa0l5yW9IOy9OGoo177Kh6mCUwjyjAmU8qONi8Wbpwv6Zk=w480-h960-rw',
+          link: 'https://play.google.com/store/apps/details?id=com.bircube.statusdownloaderforwhatsapp',
         },
       ],
     },
   },
   seo: {
-    title: 'Portfolio of Ariful Alam',
+    title: '',
     description: '',
     imageURL: '',
   },
@@ -66,39 +90,48 @@ const CONFIG = {
     email: 'iamshafqatkhan@gmail.com',
   },
   resume: {
-    fileUrl:
-      '', 
+    fileUrl: '',
   },
   skills: [
-    'PHP',
-    'Laravel',
-    'JavaScript',
     'React.js',
+    'React Native',
     'Node.js',
-    'Nest.js',
-    'MySQL',
-    'PostgreSQL',
-    'Git',
-    'Docker',
-    'PHPUnit',
+    'Next.js',
+    'Firebase',
+    'JavaScript',
+    'TypeScript',
     'CSS',
-    'Antd',
     'Tailwind',
+    'Git',
   ],
   experiences: [
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
+      company: 'Codilityhub Technologies Pvt. Ltd.',
+      position: 'React Native Developer',
+      from: '17 August 2023',
       to: 'Present',
-      companyLink: 'https://example.com',
+      companyLink: 'https://codilityhub.com/',
     },
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
+      company: 'Bircube Technologies Pvt. Ltd.',
+      position: 'React Native Developer',
+      from: 'December 2022',
+      to: '16 August 2023',
+      companyLink: 'https://bircube.com/',
+    },
+    {
+      company: 'CodeAutomation.ai',
+      position: 'React Native Developer',
+      from: 'September 2022',
+      to: 'December 2022',
+      companyLink: 'https://codeautomation.ai/',
+    },
+    {
+      company: 'Bircube Technologies Pvt. Ltd.',
+      position: 'React Native Developer',
+      from: 'February 2021',
+      to: 'September 2022',
+      companyLink: 'https://bircube.com/',
     },
   ],
   certifications: [
@@ -110,18 +143,12 @@ const CONFIG = {
     // },
   ],
   educations: [
-    // {
-    //   institution: 'Institution Name',
-    //   degree: 'Degree',
-    //   from: '2015',
-    //   to: '2019',
-    // },
-    // {
-    //   institution: 'Institution Name',
-    //   degree: 'Degree',
-    //   from: '2012',
-    //   to: '2014',
-    // },
+    {
+      institution: 'Riphah International University',
+      degree: 'BS Software Engineering',
+      from: '2016',
+      to: '2020',
+    },
   ],
   // Display articles from your medium or dev account. (Optional)
   blog: {
@@ -201,7 +228,7 @@ const CONFIG = {
   },
 
   // Optional Footer. Supports plain text or HTML.
-  // footer: `Made with <a 
+  // footer: `Made with <a
   //     class="text-primary" href="https://github.com/arifszn/gitprofile"
   //     target="_blank"
   //     rel="noreferrer"
