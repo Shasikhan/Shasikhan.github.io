@@ -29,10 +29,10 @@
     jsonpointer "^5.0.0"
     leven "^3.1.0"
 
-"@arifszn/blog-js@^2.0.5":
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/@arifszn/blog-js/-/blog-js-2.0.5.tgz#498231d723a56c5af5cbb7c61b0f6978bba0c281"
-  integrity sha512-mbR1yrAS2qXpAAtaX0LkCEmnNUEwCRGVwlmR5QAELC6kj1pDkKKlDH4ZAZ5FlgZTYC08ikwHGSWPoA3zcEqB9w==
+"@arifszn/blog-js@^2.0.6":
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/@arifszn/blog-js/-/blog-js-2.0.6.tgz#9703c0e96e1ea94cac0a6c5db72a466336eb38e7"
+  integrity sha512-nyNFmbbScWlj/jfqR5ZQ2kC6Al3PuuVSPghmN2zUQEL02OoWD17/pUqEZaSO1GWk5RFgLaAfC2JeUhXNv7J/7A==
   dependencies:
     axios "^1.3.0"
     string-strip-html "^8.3.0"
@@ -4089,6 +4089,7 @@ string-strip-html@^8.3.0:
   integrity sha512-5ICsK1B1j0A3AF1d45m0sqQCcmi1Q+t1QpF+b794LO5FTHV+ITkGR5C+UCDJQZgs5LMuRruqr6j48PxQVIurJQ==
 
 "string-width-cjs@npm:string-width@^4.2.0", string-width@^4.1.0, string-width@^4.2.3:
+  name string-width-cjs
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
